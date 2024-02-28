@@ -8,7 +8,7 @@ O projeto está estruturado da seguinte forma:
 
 - **index.html**: Contém a estrutura HTML da página.
 - **style.css**: Arquivo CSS para estilizar a página.
-- - **style.css**: Arquivo JavaScript contendo funcionalidades interativas.
+- **script.js**: Arquivo JavaScript contendo funcionalidades interativas.
 
 O objetivo deste projeto é recriar a aparência e funcionalidade da página inicial do Spotify. Ele inclui:
 
