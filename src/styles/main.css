@@ -1,0 +1,406 @@
+.main__container {
+  display: flex;
+  flex: 1; /* Ajuste para estender até encontrar a barra lateral direita */
+  flex-grow: 1;
+  padding: 8px 8px 4px 4px;
+}
+
+.main__container .main__square {
+  background-color: var(--bg-icon);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+}
+
+.header__navigation {
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px clamp(16px, 16px + (100vw - 290px - 0px - 600px)/424 * 8, 24px);
+  border-radius: 8px 0 0;
+  background-color: #00000080;
+  min-width: 489px;
+  height: 64px;
+}
+
+.header__navigation .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__navigation button {
+  padding: 0;
+  min-height: 0;
+}
+
+.div_arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow-left,
+.arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--bg-icon);
+  background-color: var(--bg-arrow-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1020px) {
+  .arrow-right {
+    display: none;
+  }
+}
+
+.div_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#search-input {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  color: white;
+  padding: 6px 36px;
+  width: 23vw;
+  max-width: 364px;
+  min-width: 155px;
+  height: 48px;
+  border-radius: 500px;
+  font-size: 12px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.input_icon {
+  display: flex;
+  position: absolute;
+  margin-left: 10px;
+}
+
+#search-input:hover,
+.div_input:focus-within path,
+#search-input:focus,
+.div_input:hover path {
+  background-color: #333;
+  border: 1px solid #444;
+  outline: 2px solid white;
+  fill: white;
+}
+
+#search-input {
+  position: relative;
+}
+#search-input > input {
+  padding-left: 30px;
+}
+
+.header__search.search-input-focused {
+  border: 2px solid white;
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.header__login .subscribe {
+  color: var(--font-dm-color);
+  font-size: 16px;
+  height: 48px;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 8px 32px 8px 8px;
+  white-space: nowrap;
+  transition-duration: 0.1s;
+}
+
+.header__login .subscribe:hover {
+  color: white;
+  transform: scale(1.04);
+}
+
+.header__login .login {
+  min-width: 110px;
+  height: 48px;
+  color: #000;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 40px;
+  transition-duration: 0.1s;
+}
+
+.header__login .login:hover {
+  transform: scale(1.04);
+}
+
+/* PLAYLIST */
+.playlistcontainer {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.result_playlists {
+  margin-top: 16px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.playlist {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 41px;
+  margin-bottom: 12px;
+}
+
+.playlist h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.playlist #greeting {
+  color: #fff;
+  font-size: 32px;
+  display: none;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+/* SCROLL */
+.offer__scroll_container {
+  display: flex;
+  height: 100%;
+  min-width: 372px;
+  max-width: 1600px;
+  overflow-y: auto;
+  /* scroll-behavior: smooth;*/
+  padding-left: var(--pd-mn);
+  padding-right: 5px;
+}
+
+.offer__scroll_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.offer__scroll_container::-webkit-scrollbar-thumb {
+  background-color: #505050;
+}
+/* FIM SCROLL */
+
+.offer__list-item {
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  grid-gap: 24px;
+}
+
+.cards {
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  word-break: break-all;
+  position: relative;
+}
+.cards span {
+  padding: 16px;
+  position: absolute;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* COLOR CARDS */
+.card1 {
+  background-color: rgb(0, 100, 80);
+}
+.card2 {
+  background-color: rgb(132, 0, 231);
+}
+.card3 {
+  background: rgb(30, 50, 100);
+}
+.card4 {
+  background: rgb(140, 25, 50);
+}
+.card5 {
+  background: rgb(232, 17, 91);
+}
+.card6 {
+  background: rgb(83, 122, 161);
+}
+.card7 {
+  background: rgb(142, 102, 172);
+}
+.card8 {
+  background: rgb(20, 138, 8);
+}
+.card9 {
+  background: rgb(30, 50, 100);
+}
+.card10 {
+  background: rgb(233, 20, 41);
+}
+.card11 {
+  background: rgb(80, 55, 80);
+}
+.card12 {
+  background: rgb(216, 64, 0);
+}
+.card13 {
+  background: rgb(186, 93, 7);
+}
+.card14 {
+  background: rgb(0, 30, 80);
+}
+.card15 {
+  background: rgb(60, 30, 80);
+}
+/* FIM COLOR CARDS */
+
+.offer__list-item img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 107px;
+  transform: rotate(25deg) translate(18%, -2%);
+}
+
+/* CARD ARTISTA */
+
+.artist {
+  --column-count: 5;
+  --grid-gap: 24px;
+  --min-container-width: 372px;
+}
+
+.hidden {
+  display: none;
+}
+
+.artist-card {
+  background: #181818;
+  border-radius: 8px;
+  -ms-flex: 1;
+  flex: 1;
+  isolation: isolate;
+  padding: 16px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.artist-card:hover {
+  background-color: #252525;
+}
+
+.card-img {
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.artist-img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 62px;
+}
+
+.card-text a {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.artist-name {
+  box-sizing: border-box;
+  margin-block: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-block-end: 8px;
+}
+
+.artist-categorie {
+  color: #6a6a6a;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.play {
+  position: relative;
+}
+
+.play .fa-play {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  font-size: 14px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+  padding: 20px;
+  cursor: pointer;
+}
+
+#result-artist {
+  padding: 20px 40px;
+}
+/* FIM CARD ARTISTA */

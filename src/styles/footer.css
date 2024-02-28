@@ -1,0 +1,59 @@
+.footer__container {
+  display: flex;
+  height: var(--footer-height);
+  text-align: center;
+  padding: 4px 8px 8px 8px;
+  min-width: 784px;
+  overflow-x: auto;
+}
+
+.footer__container .footer__square {
+  background: var(--bg-footer);
+  width: 100%;
+  width: 100%;
+  cursor: pointer;
+  justify-content: space-between;
+  text-align: left;
+  padding: 11px 24px 7px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__square .footext {
+  margin: 0 0 4px;
+}
+
+.footer__square .Ftext {
+  display: flex;
+  color: #fff;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.footer__square .Ftitle {
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.footer__square .Fsubtitle {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.button span {
+  display: flex;
+  color: var(--bt-tx-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.footer__square .footer {
+  padding: 8px 32px;
+  min-height: 48px;
+  min-inline-size: 0px;
+}
+
+.footer__square .button:hover {
+  transform: scale(1.04);
+}
