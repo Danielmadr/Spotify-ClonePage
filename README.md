@@ -1,6 +1,6 @@
 # Spotify Clone (Pt-Br)
 
-Este é um repositório que contém uma versão simplificada e básica de um clone da página inicial do **Spotify**. Este projeto foi desenvolvido com o objetivo de praticar e demonstrar habilidades de desenvolvimento web, utilizando **HTML**, **CSS** e **JavaScript**. O projeto está hospedado no **GitHub Pages** e você pode acessá-lo através do seguinte link: [Spotify Clone](https://danielmadr.github.io/Spotify-ClonePage/)
+Este é um repositório que contém uma versão simplificada e básica de um clone da página inicial do **Spotify**. Este projeto foi desenvolvido com o objetivo de praticar e demonstrar habilidades de desenvolvimento web, utilizando **HTML**, **CSS** e **JavaScript**. O projeto está hospedado no **GitHub Pages** e você pode acessá-lo através do seguinte link: [Spotify Clone](https://danielmadr.github.io/Spotify_ClonePage/)
 
 ## Visão Geral
 
